@@ -56,3 +56,24 @@
   -{ foo }               function(){ foo }           # Ex: -{ foo() }.should.throw_error(/something/)
   obj.stub('method')     stub(obj, 'method')         # Ex: foo.stub('bar').and_return('baz')
   foo.should.eql 'bar'   expect(foo).to(eql, 'bar')  
+  
+  # Fixture Resolution
+  
+  - PATH
+  - spec/PATH
+  - spec/fixtures/PATH
+  - spec/fixtures/PATH.html
+  
+  # Mock XMLHttpRequest
+  
+  mock_request().and_return('{ foo: "bar" }', 'application/json', 200, { Accept: 'foo' })
+  
+  # More Information
+  
+  docs            : http://jspec.info
+  irc             : irc://irc.freenode.net#jspec
+  readme          : http://github.com/visionmedia/jspec
+  rails support   : http://visionmedia.github.com/jspec/rails.html
+  drupal support  : https://github.com/visionmedia/jspec-drupal
+  textmate bundle : http://github.com/visionmedia/jspec.tmbundle/tree/master
+  
