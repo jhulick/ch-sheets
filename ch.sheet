@@ -8,6 +8,20 @@
   # View the first sheet matching 'ruby'
   $ ch ruby
   ...
+  
+  # Or get specific
+  $ ch globals
+  $ ch ruby.globals
+  ...
+  
+  # Read a specific sheet without globbing
+
+  Read the exact <sheet> given. No globbing allowed here!
+  This is useful when it is difficult to target the correct sheet
+  due to short names. For example 'e' requires that you:
+
+  $ ch read e
+  ...
 
   $ Output paths to sheets matching 'ruby'
   $ ch locate ruby
