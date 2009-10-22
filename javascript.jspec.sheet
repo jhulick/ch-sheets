@@ -33,3 +33,20 @@
       })
     })
   })
+  
+  # Executable
+  
+  $ jspec                                    # Same as 'jspec run --bind'
+  $ jspec --rhino                            # Same as 'jspec run --bind --rhino'
+  $ jspec run --bind --rhino                 # Run suites using Rhino when modified
+  $ jspec run                                # Run suites once in Safari 
+  $ jspec run --bind                         # Run suites in Safari when modified
+  $ jspec run --browsers safari,opera,ff     # Run suites in Safari,Firefox, and Opera
+  $ jspec run --server                       # Run Ruby server in all supported browsers
+  $ jspec run --server --browsers opera,ff   # Run Ruby server in Opera and Firefox
+  $ jspec init                               # Creates template in the current directory
+  $ jspec init path/to/myproject             # Creates template at 'path/to/myproject'
+  $ jspec update                             # Updates the JSpec project in the current directory
+  $ jspec help                               # View help information
+  $ jspec help run                           # View help for a specific sub-command (run in this case)
+  
