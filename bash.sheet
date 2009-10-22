@@ -1,4 +1,7 @@
-  !! - Last command
+  
+  For details visit http://www.gnu.org/software/bash/manual/bashref.html
+    
+    !! - Last command
     !foo - Run most recent command starting with 'foo...' (ex. !ps, !mysqladmin)
     !foo:p - Print command that !foo would run, and add it as the latest to command history
     !$ - Last 'word' of last command ('/path/to/file' in the command 'ls -lAFh /path/to/file', '-uroot' in 'mysql -uroot')
@@ -78,5 +81,3 @@
   Avoid duplicates in your history:
     export HISTIGNORE="&:ls:ls *:[bf]g:exit"
   
-  more here:
-    http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/fto.html
