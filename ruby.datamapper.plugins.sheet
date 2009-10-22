@@ -1,0 +1,260 @@
+  
+  More information at http://wiki.github.com/datamapper/dm-core/community-plugins
+  
+  dm-accepts_nested_attributes
+   >=0.9
+   allows nested model assignment like activerecord
+  
+  dm-is-awesome_set
+   >=0.9
+   A nested set for DataMapper that actually works
+  
+  dm-is-cloneable
+   >=0.9
+   clone models with different persistable sets of attributes
+  
+  dm-is-commentable
+   >=0.9
+   adds the ability to comment any model.
+  
+  dm-is-configurable
+   >=0.10.0
+   adds configuration to resources
+  
+  dm-is-localizable
+   >=0.9
+   support for localization of content in multilanguage applications
+  
+  dm-is-protectable
+   >=0.9
+   allows to protect property assignment.
+  
+  dm-is-rateable
+   >=0.9
+   rate any DataMapper::Resource by remixing a Rating module
+  
+  dm-is-taggable
+   >=0.9
+   provides tagging support to DataMapper resources.
+  
+  dm-paperclip
+   >=0.9
+   DataMapper port of the Paperclip plugin by Thoughtbot
+  
+  dm-polymorphic
+   >=0.10.1
+   An initial repo for polymorphism in datamapper
+  
+  dm-is-paginated
+   unknown
+   Simple pagination plugin for DataMapper.
+  
+  dm-is-slug
+   unknown
+   Makes permalinks easy for datamapper objects
+  
+  dm-is-markup
+   unknown
+   Textile, Markdown, Wikitext support for datampper
+  
+  dm-pagination
+   unknown
+   A pagination plugin for DataMapper.
+  
+  dm-is-reflective
+   >=0.10.0
+   Helps you manipulate an existing database.
+  
+  dm-is-schemaless
+   unknown
+   Schemaless data in a traditional rdbms. Inspired by friendfeed
+  
+  dm-machinist
+   unknown
+   Machinist for DataMapper
+  
+  dm-semantic
+   unknown
+   Enable Semantic Web goodness for DataMapper models.
+  openid_dm_store
+   unknown
+   Add a DataMapper store to ruby-openid
+  
+  dm-is-slugged
+   unknown
+   A simple DataMapper plugin to provide SEO friendly slugs.
+  
+  dm-searchable
+   unknown
+   Very simple searching in multiple columns within a Datamapper::Resource
+  
+  dm-filters
+   unknown
+   Use filters on select queries in your models. Good for access or permissions rules.
+  
+  dm-gen
+   unknown
+   Simple generator for datamapper files
+  
+  dm-timeline
+   unknown
+   Make it easy to use temporal objects in datamapper
+  
+  dm-audited
+   unknown
+   Auditing for DataMapper::Resource objects
+  
+  dm-fuzz
+   unknown
+   Rich property types for DataMapper, with fancy string parsing
+  
+  dm-counter-cache
+   unknown
+   Allows to transparently maintain counts on a collection association for a resource.
+  
+  dm-is-taggable
+   unknown
+   Provides tagging support to DataMapper resources.
+  
+  dm-property-manager
+   unknown
+   Manages properties between two models
+  
+  dm-slug
+   unknown
+   Manages your slug so you don’t have to.
+  
+  dm-service
+   unknown
+   Normalize data from api calls to your local datamapper model. Maybe add caching later
+  
+  dm-mirror
+   unknown
+   Mirror data between systems in real-time.
+  
+  dm-gitdb
+   unknown
+   Add git feature to database
+  
+  dm-is-formattable
+   unknown
+   Description missing
+  
+  dm-userstamp
+   unknown
+   Automatic updating of created_by_id and updated_by_id attributes
+  
+  dm-is-revisioned
+   unknown
+   Versioning plugin which is a bit more flexible than 
+  dm-is-versioned
+  
+  dm-has-versions
+   unknown
+   Adds version control to DataMapper models.
+  
+  dm-sanitizer
+   unknown
+   Automated/configurable user input sanitization.
+  
+  dm-should
+   unknown
+   Provides validation and test-code generating and a little more.
+  
+  dm-composite
+   unknown
+   Support for composite properties, ie aggregations (composed_of) in ActiveRecord
+  
+  dm-is-sluggable
+   unknown
+   Plugin for referencing Resources by ‘URL slugs’.
+  
+  dm-last
+   unknown
+   Offers a short-hand for Model.all.last as Model.last
+  
+  dm-mysql
+   unknown
+   Extension for extra MySQL Options
+  
+  dm-optlock
+   unknown
+   Adds optimistic locking.
+  
+  dm-templates
+   unknown
+   Templates for dm_scaffold
+  
+  dm-presenter
+   unknown
+   Adds presenters to DataMapper.
+  
+  dm-spec
+   unknown
+   RSpec matchers for DataMapper.
+  
+  dm-fasten-the-seatbelt
+   unknown
+   Provides image and file upload storage capabilities as well as image processing
+  
+  dm-ambition
+   >=0.10
+   Ambition inspired API for DataMapper
+  
+  dm-geokit
+   unknown
+   Geokit for DataMapper
+  pagify
+   >=0.9.9
+   Pagination tools for plain Ruby, DataMapper, ActiveRecord, and other ORM.
+  
+  dm-ys
+   unknown
+   Uses html table as its schema and data powerfully like YunkerStar
+  have-code
+   unknown
+   Friendly tinyurl-style slugs for your activerecord and datamapper objects
+  
+  dm-acts_as_constant
+   unknown
+   Version of ActsAsConstant gem for DataMapper (0.9.x)
+  annotate_properties
+   unknown
+   A hybrid of DataMapper’s property declarations and annotate_models Rails plugin
+  information_schema
+   unknown
+   DataMapper Classes to Access information_schema.* in PostgreSQL 8.3
+  state_machine
+   unknown
+   Adds support for creating state machines for attributes on any Ruby class edit
+  database_cleaner
+   unknown
+   Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing.
+  
+  dm-is-published
+   >=0.10.0 (next)
+   DM plugin that provides an easy way to add different states to your models. [ live, draft, held ]
+  
+  dm-is-select
+   >=0.10.0 (next)
+   DM plugin that makes getting the <select> options from a Model easier
+  
+  dm-is-self_referential
+   >=0.10.0
+   Allows declarative specification of self referential m:m relationships
+  
+  dm-trimmer
+   >=0.10.0
+   Removes leading and trailing blanks from property values.
+  
+  dm-predefined
+   >=0.10.0
+   A DataMapper plugin for adding predefined resources to Models.
+  
+  dm-pagination
+   >=0.10.0
+   Feature rich pagination and flexible html rendering plugin
+  
+  dm-lock
+   >=0.10.0
+   Locking utilities plugin, optimistic locking etc
