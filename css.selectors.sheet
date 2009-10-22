@@ -17,19 +17,18 @@
   E:nth-last-child(n)
   E:nth-of-type(n)
   E:nth-last-of-type(n)
-  E:first-child
-  E:last-child
-  E:first-of-type
-  E:last-of-type
-  E:only-child
-  E:last-child
-  E:only-of-type
-  E:empty
-  E:link
-  E:visited
-  E:active
-  E:hover
-  E:focus
+  E:first-child          an E element, who is the first child of its parent
+  E:last-child           an E element, who is the last child of its parent
+  E:first-of-type        an E element, who is the first child of its type
+  E:last-of-type         an E element, who is the first last of its type
+  E:only-child           an E element, who is the only child of its parent
+  E:only-of-type         an E element, who is the only child of its type
+  E:empty                an E element, with no children (including text nodes)
+  E:link                 a hyperlink which has not yet being :visited
+  E:visited              a hyperlink which has been visited
+  E:active               an E element when undergoing certain user actions
+  E:hover                an E element when being hovered
+  E:focus                an E element which is currently the focus
   E:target
   E:enabled
   E:disabled
@@ -38,10 +37,10 @@
   E::first-letter
   E::before
   E::after
-  E.class
-  E#id
-  E:not(selector)
-  E F
-  E > F
-  E + F
-  E ~ F
+  E.someclass            an E element with the given class. same as E[class~=someclass]
+  E#someid               an E element with the given id. same as E[id=someid]
+  E:not(selector)        an E element matching the negated selector
+  E F                    an F element which is a descendant of E
+  E > F                  an F element which is a direct child to E
+  E + F                  an F element immediately preceded by an E element
+  E ~ F                  an F element preceded by an E element
