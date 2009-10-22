@@ -1,0 +1,39 @@
+        _                _   
+    ___| |__   ___  __ _| |_ 
+   / __| '_ \ / _ \/ _` | __|
+  | (__| | | |  __/ (_| | |_ 
+   \___|_| |_|\___|\__,_|\__|
+ 
+ 
+  # View the first sheet matching 'ruby'
+  $ ch ruby
+  ...
+
+  $ Output paths to sheets matching 'ruby'
+  $ ch locate ruby
+  /Users/tjholowaychuk/.ch-sheets/jedit_ruby_editor_plugin.sheet
+  /Users/tjholowaychuk/.ch-sheets/radrails_ruby.sheet
+  /Users/tjholowaychuk/.ch-sheets/ruby.$.sheet
+  /Users/tjholowaychuk/.ch-sheets/ruby.keywords.sheet
+  /Users/tjholowaychuk/.ch-sheets/ruby.mode_strings.sheet
+  /Users/tjholowaychuk/.ch-sheets/ruby.sheet
+  /Users/tjholowaychuk/.ch-sheets/ruby1line.sheet
+  /Users/tjholowaychuk/.ch-sheets/rubydebug.sheet
+  /Users/tjholowaychuk/.ch-sheets/rubyio.sheet
+  /Users/tjholowaychuk/.ch-sheets/rubyprof.sheet
+  /Users/tjholowaychuk/.ch-sheets/textmate_ruby.sheet
+  ...
+
+  # Output list of all sheets
+  $ ch list
+  
+  # Output list of sheets matching 'ruby'
+  $ ch find ruby
+  ruby
+  ruby.globals
+  ruby.keywords
+  ruby.mode_strings
+  ...
+
+  # Update cheat sheet repository
+  $ ch update
