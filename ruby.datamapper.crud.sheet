@@ -39,7 +39,11 @@
   
   # Update
   
+  post.update :name => 'New Name', :user => User.first
+  post.reload
+  
   # Delete
   
+  post.destroy
   Post.first.destroy
   Post.all.destroy
