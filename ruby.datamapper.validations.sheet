@@ -1,0 +1,50 @@
+
+  # DataMapper Validations
+  
+  require 'dm-validations'
+  
+  # Implicit validates_present
+  :nullable => false
+  :length => 1..n
+  
+  # Implicit validates_length
+  :length => 20
+  :length => 1..20 # May not be null
+  :length => 0..20 # May be null
+  
+  # Implicit validates_format
+  :format => ...
+  
+  validates_unique  :email
+  validates_present :name,  :email
+  validates_length  :name,  :min => 5, :max => 32
+  validates_format  :email, :format => :email_address, :message => 'Your email sucks!'
+  validates_format  :name,  :format => /\A\w+\Z/
+  validates_format  :name,  :format => lambda { |name| ... }
+  validates_format  :name,  :format => Proc.new { |name| ... }
+  validates_is_confirmed :password, :on => :register
+  validates_is_confirmed :password, :on => [:default, :register]
+  validates_with_method :check_password
+  validates_with_method :password, :method => :check_password
+  validates_present :signature, :if => lambda { |user| user.is_a_forum_member? }
+  validates_length :change_summary, :min => 10, :unless => :new?
+  
+  # Error usage
+  
+  post = Post.new(:name => 'Something')
+  if post.save
+    # do something
+  else
+    p post.errors
+    p post.errors.on(:name)
+  end
+  
+  # Contexts
+  
+  post.save(:register)
+  post.valid?(:register)
+  post.valid_for_register?
+  
+  # Manually adding errors
+  
+  post.errors.add(:name, 'Your name sucks')
