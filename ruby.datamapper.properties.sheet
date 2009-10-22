@@ -1,0 +1,68 @@
+
+  # Example Model
+  
+  class Post
+    include DataMapper::Resource
+    property :id,        Serial                       # primary serial key
+    property :title,     String,  :nullable => false  # Cannot be null
+    property :published, Boolean, :default  => false  # Default value for new records is false
+  end
+  
+  # Core Types
+  
+  - Boolean
+  - String
+  - Text
+  - Float
+  - Integer
+  - BigDecimal,
+  - DateTime, Date, Time
+  - Object, (marshalled)
+  - Discriminator
+  
+  # Types via 'dm-types'
+  
+  - Csv
+  - Enum
+  - EpochTime
+  - FilePath
+  - Flag
+  - IPAddress
+  - URI
+  - Yaml
+  - Json
+  - BCryptHash
+  - Regex
+  
+  # Natural Keys
+  
+  Natural keys are protected against mass-assignment, 
+  you must explicitly call :sku= to assign the value.
+  
+  property :sku, String, :key => true 
+  
+  # Lazy Loading
+  
+  Properties may be 'lazy loaded', after which you must call the 
+  method directly to have it's contents loaded. Text properties are
+  lazy by default.
+  
+  property :body, Text
+  property :body, Text, :lazy => false
+  
+  Lazy Loading can also be done via contexts, which let you group 
+  lazily loaded properties together, so that when one is fetched, 
+  all the associated ones will be as well, cutting down on trips 
+  to the data-store.
+  
+  property :summary, Text, :lazy => [:show]
+  property :body,    Text, :lazy => [:show]
+  
+  # Overridding Setters
+  
+  Use the #attribute_set method instead of using @inst_vars.
+  
+  def name= string
+    raise ArgumentError if string != 'amazing'
+    attribute_set :name, string 
+  end

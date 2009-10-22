@@ -1,0 +1,9 @@
+
+  # An in-memory Sqlite3 connection:
+  DataMapper.setup(:default, 'sqlite3::memory:')
+  
+  # A MySQL connection:
+  DataMapper.setup(:default, 'mysql://localhost/the_database_name')
+  
+  # A Postgres connection:
+  DataMapper.setup(:default, 'postgres://localhost/the_database_name')
