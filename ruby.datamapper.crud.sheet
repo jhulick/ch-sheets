@@ -47,3 +47,14 @@
   post.destroy
   Post.first.destroy
   Post.all.destroy
+  
+  # Symbol Operators
+  
+  :foo.lt   <
+  :foo.lte  <=
+  :foo.gt   >
+  :foo.gte  >=
+  :foo.eql  ==
+  :foo.like
+  :foo.regexp
+  
