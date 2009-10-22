@@ -1,0 +1,45 @@
+
+  # Create
+  
+  post = Post.new
+  post.title = 'Article Name'
+  post.user = current_user
+  post.save
+  
+  post = Post.new
+  post.attributes = { :name => 'Article Name', :user => current_user }
+  post.save
+  
+  post = Zoo.new :name => 'Article Name', :user => current_user
+  post.save
+  
+  post = Zoo.create :name => 'Article Name', :user => current_user
+  
+  user.post = Zoo.create :name => 'Foo'
+  user.post.creat :name => 'Foo'
+
+  # Read
+  
+  posts = Post.all
+  post  = Post.first
+  post  = Post.last
+  post  = Post[8]
+  post  = Post.at(7)
+  post  = Post.get(8)
+  posts = Post[1..5]
+  posts = Post.slice(2, 5)
+  posts = Post.all.slice(2, 5)
+  posts = Post.all(:conditions => ['name IN (?, ?)', 'foo', 'bar'])
+  posts = Post.all(:name.in => ['foo', 'bar'])
+  post  = Post.first :user => current_user
+  post  = Post.first :user => current_user, :name => 'Article Name'
+  post  = Post.first_or_new { :name => 'Article Name' }, :user => current_user, :other => :stuff
+  post  = Post.first_or_create { :name => 'Article Name' }, :user => current_user, :other => :stuff
+  posts = Post.published.by_user current_user # queries can be chained together to make nice DSLs
+  
+  # Update
+  
+  # Delete
+  
+  Post.first.destroy
+  Post.all.destroy
