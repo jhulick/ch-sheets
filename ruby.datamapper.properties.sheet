@@ -36,9 +36,6 @@
   
   # Natural Keys
   
-  Natural keys are protected against mass-assignment, 
-  you must explicitly call :sku= to assign the value.
-  
   property :sku, String, :key => true 
   
   # Lazy Loading
