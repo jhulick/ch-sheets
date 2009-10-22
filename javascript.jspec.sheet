@@ -50,3 +50,9 @@
   $ jspec help                               # View help information
   $ jspec help run                           # View help for a specific sub-command (run in this case)
   
+  # Grammar Conversions
+  
+  1..5                   [1,2,3,4,5]                 # Ex: number.should.be_within(1..5)
+  -{ foo }               function(){ foo }           # Ex: -{ foo() }.should.throw_error(/something/)
+  obj.stub('method')     stub(obj, 'method')         # Ex: foo.stub('bar').and_return('baz')
+  foo.should.eql 'bar'   expect(foo).to(eql, 'bar')  
