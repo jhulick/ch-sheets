@@ -1,0 +1,35 @@
+                  ___           ___         ___           ___     
+     ___         /\__\         /\  \       /\__\         /\__\    
+    /\__\       /:/ _/_       /::\  \     /:/ _/_       /:/  /    
+   /:/__/      /:/ /\  \     /:/\:\__\   /:/ /\__\     /:/  /     
+  /::\  \     /:/ /::\  \   /:/ /:/  /  /:/ /:/ _/_   /:/  /  ___ 
+  \/\:\  \   /:/_/:/\:\__\ /:/_/:/  /  /:/_/:/ /\__\ /:/__/  /\__\
+   ~~\:\  \  \:\/:/ /:/  / \:\/:/  /   \:\/:/ /:/  / \:\  \ /:/  /
+      \:\__\  \::/ /:/  /   \::/__/     \::/_/:/  /   \:\  /:/  / 
+      /:/  /   \/_/:/  /     \:\  \      \:\/:/  /     \:\/:/  /  
+     /:/  /      /:/  /       \:\__\      \::/  /       \::/  /   
+     \/__/       \/__/         \/__/       \/__/         \/__/
+
+  More information at http://jspec.info
+  
+  # Grammar
+  
+  describe "Something"
+    describe "#method()"
+      it "should do something"
+        var something = new Something
+        something.method().should.be_true
+      end
+    end
+  end
+  
+  # Grammar-less
+  
+  JSpec.describe("Something", function(){
+    describe("#method()", function(){
+      it("should do something", function(){
+        var something = new Something
+        expect(something.method()).to(be_true)
+      })
+    })
+  })
