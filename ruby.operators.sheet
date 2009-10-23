@@ -1,0 +1,26 @@
+  
+  # Operators and Precedence
+  
+  :: .
+  []
+  **
+  -(unary) +(unary) ! ~
+  *  /  %
+  +  -
+  <<  >>
+  &
+  |  ^
+  >  >=  <  <=
+  <=> == === != =~ !~
+  &&
+  ||
+  .. ...
+  =(+=, -=...)
+  not
+  and or
+  
+  # Non-methods
+  
+  =, ::, ., .., ..., !, not, &&, and, ||, or, !=, !~
+  
+  In addition, assignment operators(+= etc.) are not user-definable.
