@@ -5,12 +5,11 @@
   
   # Implicit validates_present
   :nullable => false
-  :length => 1..n
   
   # Implicit validates_length
   :length => 20
-  :length => 1..20 # May not be null
-  :length => 0..20 # May be null
+  :length => 5..20 
+  :length => 0..20
   
   # Implicit validates_format
   :format => ...
