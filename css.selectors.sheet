@@ -30,13 +30,13 @@
   E:hover                an E element when being hovered
   E:focus                an E element which is currently the focus
   E:target
-  E:enabled
-  E:disabled
-  E:checked
-  E::first-line
-  E::first-letter
-  E::before
-  E::after
+  E:enabled              an E element with attribute enabled=enabled
+  E:disabled             an E element with attribute disabled=disabled
+  E:checked              an E element with attribute checked=checked
+  E::first-line          an E element's first line of text
+  E::first-letter        an E element's first letter of text
+  E::before              generated content before an E element
+  E::after               generated content after an E element
   E.someclass            an E element with the given class. same as E[class~=someclass]
   E#someid               an E element with the given id. same as E[id=someid]
   E:not(selector)        an E element matching the negated selector
