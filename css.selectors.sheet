@@ -44,3 +44,17 @@
   E > F                  an F element which is a direct child to E
   E + F                  an F element immediately preceded by an E element
   E ~ F                  an F element preceded by an E element
+  
+  Examples
+  
+  ul li *                             all elements within a ul's li
+  ul ul li                            all li's who are descendants of 2 or more ul's
+  ul li:first-child                   first li
+  ul li:nth-child(even)               all even li's (2, 4, 6, ...)
+  ul li:nth-child(2n)                 all even li's (2, 4, 6, ...)
+  ul li:nth-child(odd)                all odd li's (1, 3, 5, ...)
+  ul li:nth-child(2n+1)               all odd li's (1, 3, 5, ...)
+  input[type=button]:not([disabled])  all buttons which are not disabled
+  input + span.description            all spans with the .description class immediately following an input element
+  input ~ span.description            all spans with the .description class following an input element
+  
