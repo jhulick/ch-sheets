@@ -1,34 +1,34 @@
 
  # Signals
  
- SIGABRT    Process aborted
- SIGALRM    Signal raised by alarm
- SIGBUS     Bus error: "access to undefined portion of memory object"
- SIGCHLD    Child process terminated, stopped (or continued*)
- SIGCONT    Continue if stopped
- SIGFPE     Floating point exception: "erroneous arithmetic operation"
- SIGHUP     Hangup
- SIGILL     Illegal instruction
- SIGINT     Interrupt
- SIGKILL    Kill (terminate immediately)
- SIGPIPE    Write to pipe with no one reading
- SIGQUIT    Quit and dump core
- SIGSEGV    Segmentation violation
- SIGSTOP    Stop executing temporarily
- SIGTERM    Termination (request to terminate)
- SIGTSTP    Terminal stop signal
- SIGTTIN    Background process attempting to read from tty ("in")
- SIGTTOU    Background process attempting to write to tty ("out")
- SIGUSR1    User-defined 1
- SIGUSR2    User-defined 2
- SIGPOLL    Pollable event
- SIGPROF    Profiling timer expired
- SIGSYS     Bad syscall
- SIGTRAP    Trace/breakpoint trap
- SIGURG     Urgent data available on socket
- SIGVTALRM  Signal raised by timer counting virtual time: "virtual timer expired"
- SIGXCPU    CPU time limit exceeded
- SIGXFSZ    File size limit exceeded
+ ABRT    Process aborted
+ ALRM    Signal raised by alarm
+ BUS     Bus error: "access to undefined portion of memory object"
+ CHLD    Child process terminated, stopped (or continued*)
+ CONT    Continue if stopped
+ FPE     Floating point exception: "erroneous arithmetic operation"
+ HUP     Hangup
+ ILL     Illegal instruction
+ INT     Interrupt
+ KILL    Kill (terminate immediately)
+ PIPE    Write to pipe with no one reading
+ QUIT    Quit and dump core
+ SEGV    Segmentation violation
+ STOP    Stop executing temporarily
+ TERM    Termination (request to terminate)
+ TSTP    Terminal stop signal
+ TTIN    Background process attempting to read from tty ("in")
+ TTOU    Background process attempting to write to tty ("out")
+ USR1    User-defined 1
+ USR2    User-defined 2
+ POLL    Pollable event
+ PROF    Profiling timer expired
+ SYS     Bad syscall
+ TRAP    Trace/breakpoint trap
+ URG     Urgent data available on socket
+ VTALRM  Signal raised by timer counting virtual time: "virtual timer expired"
+ XCPU    CPU time limit exceeded
+ XFSZ    File size limit exceeded
  
  # Terminal Usage
  
