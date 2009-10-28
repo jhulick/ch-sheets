@@ -8,7 +8,7 @@
  $(elements)               Construct jQuery object from one or more elements         Ex: $(document.body)
  $(jQuery)                 Passes jQuery objects through                             Ex: $($('ul > li'))
 
- # Accessors
+ ## Accessors
  
  $(...).get(index)         Get DOM element at the given index                        Ex: $('li').get(1)  or  $('li')[1]
  $(...).length             Number of DOM elements matched                            Ex: $('li').length
@@ -18,7 +18,7 @@
  $(...).each(fn)           Iterate using fn callback; 'this' becomes the element     Ex: $('li').each(function(i, element){})
  $(...).index(element)     Return index of the given element or -1                   Ex: $('li').index(lastListItem)
 
- # Data
+ ## Data
  
  Data methods refer to first element in the collection.
  
@@ -26,3 +26,22 @@
  $(...).data(key, val)     Set data for key to val (strings, objects, etc)           Ex: $('li').data('something', { is: 'awesome' }) 
  $(...).removeData(key)    Remove data for key                                       Ex: $('li').removeData('something')
  
+ ## Plugins
+ 
+ $.fn.extend({
+   check: function(){
+     return this.each(function(){
+       this.checked = true
+     })
+   }
+ })
+ 
+ $(...).check()
+ 
+ $.extend({
+   say: function(msg) {
+     alert(msg)
+   }
+ })
+ 
+ $.say('hey')
