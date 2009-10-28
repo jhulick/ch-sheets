@@ -1,17 +1,19 @@
 
    # Docbook
    
-   ## Paragraphs
+   ## Basics
    
    <para>This is a paragraph</para>
-   
-   ## Methods
-   
    <methodname>toString()</methodname>
-   
-   ## Classes
-   
+   <property>length</property>
+   <constant>VERSION</constant>
    <classname>BasicObject</classname>
+   <email>tj@vision-media.ca</email>
+   <keycombo>CTRL + C</keycombo>
+   <exceptionname>StandardError</exceptionname>
+   <errortext>error parsing foo.rb</errortext>
+   <filename>foo.rb</filename>
+   <uri>http://vision-media.ca</uri>
    
    ## Code
    
