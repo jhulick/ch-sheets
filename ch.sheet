@@ -5,16 +5,16 @@
    \___|_| |_|\___|\__,_|\__|
  
  
-  # View the first sheet matching 'ruby'
+  ## View the first sheet matching 'ruby'
   $ ch ruby
   ...
   
-  # Or get specific
+  ## Or get specific
   $ ch globals
   $ ch ruby.globals
   ...
   
-  # Read a specific sheet without globbing
+  ## Read a specific sheet without globbing
 
   Read the exact <sheet> given. No globbing allowed here!
   This is useful when it is difficult to target the correct sheet
@@ -23,7 +23,7 @@
   $ ch read e
   ...
 
-  $ Output paths to sheets matching 'ruby'
+  ## Output paths to sheets matching 'ruby'
   $ ch locate ruby
   /Users/tjholowaychuk/.ch-sheets/jedit_ruby_editor_plugin.sheet
   /Users/tjholowaychuk/.ch-sheets/radrails_ruby.sheet
@@ -38,10 +38,10 @@
   /Users/tjholowaychuk/.ch-sheets/textmate_ruby.sheet
   ...
 
-  # Output list of all sheets
+  ## Output list of all sheets
   $ ch list
   
-  # Output list of sheets matching 'ruby'
+  ## Output list of sheets matching 'ruby'
   $ ch find ruby
   ruby
   ruby.globals
@@ -49,5 +49,9 @@
   ruby.mode_strings
   ...
 
-  # Update cheat sheet repository
+  ## Update cheat sheet repository
   $ ch update
+  
+  ## Viewing sheet specifics
+  ch css | grep :empty
+  E:empty                an E element, with no children (including text nodes)
