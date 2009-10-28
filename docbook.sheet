@@ -1,0 +1,91 @@
+
+   # Docbook
+   
+   ## Paragraphs
+   
+   <para>This is a paragraph</para>
+   
+   ## Methods
+   
+   <methodname>toString()</methodname>
+   
+   ## Classes
+   
+   <classname>BasicObject</classname>
+   
+   ## Code
+   
+   <programlisting language="java" linenumbering="numbered">
+   <![CDATA[
+     function foo(bar){
+       String b = new String;
+       return(b = bar);
+     }
+   ]]>
+   </programlisting>
+   
+   ## Annotations
+   
+   <note>
+     <para>This is a note</para>
+   </note>
+   
+   <tip>
+     <para>This is a tip</para>
+   </tip>
+   
+   <warning>
+     <para>This is a warning</para>  
+   </warning>
+   
+   # Commandline
+   
+   <para><command>ls | head -n 2</command></para>
+   <screen>
+     <![CDATA[
+     Readme.md
+     ansi.escape.sheet
+     ]]>
+   </screen
+   
+   ## Unordered Lists
+   
+   <itemizedlist>
+     <listitem><para>First item</para></listitem>
+     <listitem><para>Second item</para></listitem>
+   </itemizedlist>
+   
+   ## Ordered List
+   
+   <orderedlist>
+     <listitem><para>First item</para></listitem>
+     <listitem><para>Second item</para></listitem>
+   </orderedlist>
+   
+   ## Includes
+   
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="chapter01.xml"/>
+   
+   ## Index
+   
+   <index />
+   
+   ## Images
+   
+   <sect1 xml:id="sec.A.cross.reference">
+     <title>A cross reference</title>
+     <para>You can easily cross reference things by referencing the XML id attribute of any element. See <xref linkend="fig.sample.image" /> to see a screenshot.</para>
+        
+   </sect1>
+
+   <figure xml:id="fig.sample.image">
+     <title>A sample figure.</title>
+     <screenshot>
+       <mediaobject>
+         <imageobject>
+           <imagedata fileref="images/sample.png" width="4in"></imagedata>
+         </imageobject>
+         <caption><para>A sample image</para></caption>
+       </mediaobject>    
+     </screenshot> 
+   </figure>
