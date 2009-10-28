@@ -1,44 +1,44 @@
 
  # jQuery Core
  
- $(fn)                     Same as $(document).read(function(){})                    Ex: $(function(){})
- $(selector)               Query DOM using css selectors                             Ex: $('ul > li a')
- $(selector, context)      Query context using css selectors                         Ex: $('li a', myList)
- $(html)                   Construct elements (IE requires "type" attr for inputs)   Ex: $('<input type="checkbox"/>')
- $(elements)               Construct jQuery object from one or more elements         Ex: $(document.body)
- $(jQuery)                 Passes jQuery objects through                             Ex: $($('ul > li'))
-
- ## Accessors
- 
- $(...).get(index)         Get DOM element at the given index                        Ex: $('li').get(1)  or  $('li')[1]
- $(...).length             Number of DOM elements matched                            Ex: $('li').length
- $(...).size()             Number of DOM elements matched                            Ex: $('li').size()
- $(...).selector           Return selector string used                               Ex: $("ul li").selector
- $(...).context            Return context used                                       Ex: $("ul li", myList).context
- $(...).each(fn)           Iterate using fn callback; 'this' becomes the element     Ex: $('li').each(function(i, element){})
- $(...).index(element)     Return index of the given element or -1                   Ex: $('li').index(lastListItem)
-
- ## Data
- 
- Data methods refer to first element in the collection.
- 
- $(...).data(key)          Get data for key if present                               Ex: $('li').data('something') 
- $(...).data(key, val)     Set data for key to val (strings, objects, etc)           Ex: $('li').data('something', { is: 'awesome' }) 
- $(...).removeData(key)    Remove data for key                                       Ex: $('li').removeData('something')
- 
- ## Plugins
- 
- $.fn.extend({
-   check: function(){
-     return this.each(function(){
-       this.checked = true
-     })
-   }
- })
- 
- $(...).check()
- 
- $.extend({
+ $(fn)                     Same as $(document).read(function(){})                   
+ $(selector)               Query DOM using css selectors                            
+ $(selector, context)      Query context using css selectors                        
+ $(html)                   Construct elements (IE requires "type" attr for inputs)  
+ $(elements)               Construct jQuery object from one or more elements        
+ $(jQuery)                 Passes jQuery objects through                            
+                                                                                    
+ ## Accessors                                                                       
+                                                                                    
+ $(...).get(index)         Get DOM element at the given index                       
+ $(...).length             Number of DOM elements matched                           
+ $(...).size()             Number of DOM elements matched                           
+ $(...).selector           Return selector string used                              
+ $(...).context            Return context used                                      
+ $(...).each(fn)           Iterate using fn callback; 'this' becomes the element    
+ $(...).index(element)     Return index of the given element or -1                  
+                                                                                    
+ ## Data                                                                            
+                                                                                    
+ Data methods refer to first element in the collection.                             
+                                                                                    
+ $(...).data(key)          Get data for key if present                              
+ $(...).data(key, val)     Set data for key to val (strings, objects, etc)          
+ $(...).removeData(key)    Remove data for key                                      
+                                                                                    
+ ## Plugins                                                                         
+                                                                                    
+ $.fn.extend({                                                                      
+   check: function(){                                                               
+     return this.each(function(){                                                   
+       this.checked = true                                                          
+     })                                                                             
+   }                                                                                
+ })                                                                                 
+                                                                                    
+ $(...).check()                                                                     
+                                                                                    
+ $.extend({                                                                         
    say: function(msg) {
      alert(msg)
    }
