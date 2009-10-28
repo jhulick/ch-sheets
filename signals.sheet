@@ -1,7 +1,34 @@
 
  # Signals
  
- 
+ SIGABRT    Process aborted
+ SIGALRM    Signal raised by alarm
+ SIGBUS     Bus error: "access to undefined portion of memory object"
+ SIGCHLD    Child process terminated, stopped (or continued*)
+ SIGCONT    Continue if stopped
+ SIGFPE     Floating point exception: "erroneous arithmetic operation"
+ SIGHUP     Hangup
+ SIGILL     Illegal instruction
+ SIGINT     Interrupt
+ SIGKILL    Kill (terminate immediately)
+ SIGPIPE    Write to pipe with no one reading
+ SIGQUIT    Quit and dump core
+ SIGSEGV    Segmentation violation
+ SIGSTOP    Stop executing temporarily
+ SIGTERM    Termination (request to terminate)
+ SIGTSTP    Terminal stop signal
+ SIGTTIN    Background process attempting to read from tty ("in")
+ SIGTTOU    Background process attempting to write to tty ("out")
+ SIGUSR1    User-defined 1
+ SIGUSR2    User-defined 2
+ SIGPOLL    Pollable event
+ SIGPROF    Profiling timer expired
+ SIGSYS     Bad syscall
+ SIGTRAP    Trace/breakpoint trap
+ SIGURG     Urgent data available on socket
+ SIGVTALRM  Signal raised by timer counting virtual time: "virtual timer expired"
+ SIGXCPU    CPU time limit exceeded
+ SIGXFSZ    File size limit exceeded
  
  # Terminal Usage
  
