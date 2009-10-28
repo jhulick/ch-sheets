@@ -17,3 +17,12 @@
  $(...).context            Return context used                                       Ex: $("ul li", myList).context
  $(...).each(fn)           Iterate using fn callback; 'this' becomes the element     Ex: $('li').each(function(i, element){})
  $(...).index(element)     Return index of the given element or -1                   Ex: $('li').index(lastListItem)
+
+ # Data
+ 
+ Data methods refer to first element in the collection.
+ 
+ $(...).data(key)          Get data for key if present                               Ex: $('li').data('something') 
+ $(...).data(key, val)     Set data for key to val (strings, objects, etc)           Ex: $('li').data('something', { is: 'awesome' }) 
+ $(...).removeData(key)    Remove data for key                                       Ex: $('li').removeData('something')
+ 
