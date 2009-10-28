@@ -1,0 +1,9 @@
+
+ # jQuery Core
+ 
+ $(callback)               Same as $(document).read(functoin(){})                    Ex: $(function(){})
+ $(selector)               Query DOM using css selectors                             Ex: $('ul > li a')
+ $(selector, context)      Query context using css selectors                         Ex: $('li a', myList)
+ $(html)                   Construct elements (IE requires "type" attr for inputs)   Ex: $('<input type="checkbox"/>')
+ $(elements)               Construct jQuery object from one or more elements         Ex: $(document.body)
+ $(jQuery)                 Passes jQuery objects through                             Ex: $($('ul > li'))
