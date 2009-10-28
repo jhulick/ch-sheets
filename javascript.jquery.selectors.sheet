@@ -1,0 +1,35 @@
+
+  # jQuery Selectors
+  
+  View 'css.selectors.sheet' for CSS 3 selectors, as these are specific to jQuery only:
+  
+  :header          Headings h1, h2, h3, etc
+  :animated        Currently animated elements
+  :first           Matches only a single element, :first-child matches one per parent
+  :last            Matches only a single element, :last-child matches one per parent
+  :even            Even elements
+  :odd             Odd elements
+  :contains(text)  Matches elements containing the given text
+  :has(selector)   Matches elements which contain at least one element matching the given selector
+  :parent          Matches all elements which are parents (including text nodes)
+  :visible         Matches all visible elements
+  :hidden          Matches all hidden elements
+  :enabled         Matches all enabled elements
+  :disabled        Matches all disabled elements
+  :checked         Matches all checked elements
+  :selected        Matches all selected elements
+  
+  ## Input Types
+  
+  The following are essentially the same as using input[type=TYPE]
+  
+  :checkbox
+  :image
+  :reset
+  :button
+  :file
+  :text
+  :password
+  :radio
+  :hidden
+  :submit
