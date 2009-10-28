@@ -1,0 +1,20 @@
+
+ # Signals
+ 
+ 
+ 
+ # Terminal Usage
+ 
+ $ kill <pid>         # Defaults to TERM
+ $ kill -n <pid>      # Signal number
+ $ kill -NAME <pid>   # Signal name
+ 
+ $ kill 333           # All send TERM to process 333
+ $ kill -15 333       # All send TERM to process 333
+ $ kill -TERM 333     # All send TERM to process 333
+ 
+ # Ruby Usage
+ 
+ trap :TERM do
+   # Handle TERM signal
+ end
