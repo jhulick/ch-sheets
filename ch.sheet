@@ -52,6 +52,9 @@
   ## Update cheat sheet repository
   $ ch update
   
+  ## Update the 'ch' executable
+  $ ch update self
+  
   ## Viewing sheet specifics
   ch css | grep :empty
   E:empty                an E element, with no children (including text nodes)
