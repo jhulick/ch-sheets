@@ -1,0 +1,13 @@
+
+  # Thread Safety
+  
+  To be reentrant, a computer program or routine must:
+  
+    * hold no static (or global) non-constant data.
+    * not return the address to static (or global) non-constant data.
+    * work only on the data provided to it by the caller.
+    * not rely on locks to singleton resources.
+    * not modify its own code.[1] (unless executing in its own unique thread storage)
+    * not call non-reentrant computer programs or routines.
+    
+  Details at http://en.wikipedia.org/wiki/Reentrant_(subroutine)
