@@ -25,3 +25,16 @@
   A string containing a filename different from any existing file is generated.
   The filename will be stored in _str_ or a pointer will be returned when NULL
   is given.
+  
+  ## Macros
+  
+  EOF             End-of-File
+  FILENAME_MAX    Max length for a filename
+  TMP_MAX         Number of temporary files
+  NULL            Null pointer
+  
+  ## Types
+  
+  FILE            Object containing information to control a stream
+  fpos_t          Object containing information to specify a position within a file
+  size_t          Unsigned integral type
