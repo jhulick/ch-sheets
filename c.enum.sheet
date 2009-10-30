@@ -1,0 +1,40 @@
+
+  # C Enumerations
+  
+  # Automatically Assigned Values
+  
+  enum bool { NO, YES };
+  NO  // => 0
+  YES // => 1
+  
+  # Custom Initial Value
+  
+  enum months {
+    JAN = 1,
+    FEB,
+    MAR,
+    APR,
+    ...
+  };
+  JAN // => 1
+  FEB // => 2
+  MAR // => 3
+  
+  # Custom Values
+  
+  enum escapes {
+    BELL = '\a',
+    BACKSPACE = '\b',
+    TAB = '\t',
+    ...
+  }
+  
+  # Typedef
+  
+  typedef {
+    tId,
+    tTrue,
+    tFalse,
+    tReturn,
+    ...
+  } TokenType;
