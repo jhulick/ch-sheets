@@ -1,0 +1,69 @@
+
+  # C Structures
+  
+  # Named Structure
+  
+  struct point {
+    int x;
+    int y;
+  };
+  
+  struct point p = { 5, 10 };
+  
+  # Named With Several Initialized Points
+  
+  struct point {
+    int x;
+    int y;
+  } a = { 1, 2 },
+    b = { 5, 5 },
+    c = { 2, 4 };
+  
+  # With Initial Array
+  
+  struct {
+    int x;
+    int y;
+  } points[] = {
+    { 1, 2 }, 
+    { 2, 3 },
+  };
+  
+  points[0].x
+  points[0].y
+  
+  # With Initial Array '{' and '}' are optional
+  
+  static struct {
+    char *string;
+    char *str;
+  } months[] = {
+    "January",  "Jan", 
+    "February", "Feb",
+    "March",    "Mar", 
+  };
+  
+  months[0].string
+  months[0].str
+  
+  # Typedef
+  
+  typedef struct {
+    int x;
+    int y;
+  } Point;
+  
+  Point p = { 1, 2 };
+  
+  # Self Referential TypedefR
+  
+  typedef struct _point_ {
+    int x;
+    int y;
+    struct _point_ *last;
+  } Point;
+  
+  Point a = { 1, 2, NULL };
+  Point b = { 1, 2, &a };
+  printf("<Point x:%d y:%d>\n", b.last->x, b.last->y);
+  // => <Point x:1 y:2>
