@@ -31,7 +31,7 @@
   0110 >> 1
   0011
   
-  ## Permission Flag Example
+  ## Permission Bitflag Example
   
   VIEW_USERS = 1       0001
   EDIT_USERS = 2       0010
