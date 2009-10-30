@@ -1,0 +1,27 @@
+
+  # C IO
+  
+  ## Removing Files
+  
+  int remove ( const char *filename );
+  Deletes the given _filename_, returns non-zero int
+  when an error has occurred. See perror()
+  
+  # Renaming Files
+  
+  int rename ( const char *oldname, const char *newname );
+  Renames _oldname_ to _newname_, returns non-zero int
+  when an error has occurred. See perror()
+  
+  # Temp Files
+  
+  FILE *tmpfile ( void );
+  Creates a temporary binary file, open for writing. 
+  The filename is guaranteed to be different from any other existing file.
+  The temporary file created is automatically deleted when the stream is closed (fclose) 
+  or when the program terminates normally.
+  
+  char *tmpnam ( char *str );
+  A string containing a filename different from any existing file is generated.
+  The filename will be stored in _str_ or a pointer will be returned when NULL
+  is given.
