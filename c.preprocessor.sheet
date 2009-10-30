@@ -1,4 +1,20 @@
 
+  # C Pre-processor
+  
+  #include <filename.h>
+  #include "filename.h"
+  #if
+  #else
+  #elif
+  #endif
+  #define NAME text
+  #define NAME(var) text
+  #undef NAME
+  #define EVAL(E) printf("%s = %d\n", #E, E);
+  #define ARRAY_METHOD(N) Array *Array_##N
+  #if defined(NAME) && defined(FOO)
+  \ line continuation
+  
   # Macro Examples
   
   #define MAX(A, B) ((A) > (B) ? (A) : (B))
@@ -6,7 +22,7 @@
   
   #define ERROR(S, ...) fprintf(stderr, S "\n", __VA_ARGS__)
   ERROR("SyntaxError: near `%s'", str);
-
+  
   # Predefined Names
   
   __LINE__ // => 128

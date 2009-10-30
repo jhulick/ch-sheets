@@ -7,13 +7,13 @@
   Deletes the given _filename_, returns non-zero int
   when an error has occurred. See perror()
   
-  # Renaming Files
+  ## Renaming Files
   
   int rename ( const char *oldname, const char *newname );
   Renames _oldname_ to _newname_, returns non-zero int
   when an error has occurred. See perror()
   
-  # Temp Files
+  ## Temp Files
   
   FILE *tmpfile ( void );
   Creates a temporary binary file, open for writing. 
@@ -25,6 +25,13 @@
   A string containing a filename different from any existing file is generated.
   The filename will be stored in _str_ or a pointer will be returned when NULL
   is given.
+  
+  ## Error Handling
+  
+  void perror ( const char *str );
+  Interprets the value of the global variable errno into a string and
+  prints that string to stderr, optionally preceding it with a custom _str_,
+  which is followed by a colon (:) and a space.
   
   ## Macros
   
