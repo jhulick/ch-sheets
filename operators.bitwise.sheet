@@ -61,5 +61,6 @@
   ### Remove Role Permissions
   
   Anonymous ^= VIEW_USERS   0000
+  Admin ^= DELETE_USERS     0011
   
   
