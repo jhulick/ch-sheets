@@ -31,6 +31,17 @@
   0110 >> 1
   0011
   
+  # Base Examples
+  
+  BINARY    OCTAL   DECIMAL    HEX
+  0000001   0001    1          0x001
+  0000010   0002    2          0x002
+  0000100   0004    4          0x004
+  0001000   0010    8          0x008
+  0010000   0020    16         0x010
+  0100000   0040    32         0x020
+  1000000   0100    64         0x040
+  
   ## Permission Bitflag Example
   
   VIEW_USERS = 1       0001
