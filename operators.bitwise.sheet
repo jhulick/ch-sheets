@@ -1,33 +1,54 @@
 
   # Bitwise Operators
   
-  ## NOT ~ (unary)
-  ~ 0111
-  = 1000
+  ## NOT ~    
+  ~ 0111      
+  = 1000      
+              
+  ## OR |     
+              
+    0010      
+  | 1000      
+  = 1010      
+              
+  ## XOR ^    
+              
+    0010      
+  ^ 1010      
+  = 1000      
+              
+  ## AND &    
+              
+    0101      
+  & 0011      
+  = 0001      
+              
+  ## Shifts   
   
-  ## OR |
-  
-    0010
-  | 1000
-  = 1010
-  
-  ## XOR ^
-  
-    0010
-  ^ 1010
-  = 1000
-  
-  ## AND &
-  
-    0101
-  & 0011
-  = 0001
-  
-  ## Shifts
-  
-  0011 <<
+  0011 << 1
   0110
   
-  0110 >>
+  0110 >> 1
   0011
+  
+  ## Permission Flag Example
+  
+  VIEW_USERS = 1       0001
+  EDIT_USERS = 2       0010
+  DELETE_USERS = 4     0100
+  
+  Admin = VIEW_USERS | EDIT_USERS | DELETE_USERS  0111
+  Anonymous = VIEW_USERS                          0001
+  user.role = Anonymous
+  
+  ### Check Permissions
+  
+  if (user.role & VIEW_USERS) ;   This will pass
+  if (user.role & EDIT_USERS) ;   This will fail
+  if (user.role & DELETE_USERS) ; This will fail
+  
+  ### Remove Role Permissions
+  
+  Anonymous ^= VIEW_USERS   0000
+  
   
