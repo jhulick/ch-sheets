@@ -1,0 +1,15 @@
+
+  # Macro Examples
+  
+  #define MAX(A, B) ((A) > (B) ? (A) : (B))
+  MAX(20, 15);
+  
+  #define ERROR(S, ...) fprintf(stderr, S "\n", __VA_ARGS__)
+  ERROR("SyntaxError: near `%s'", str);
+
+  # Predefined Names
+  
+  __LINE__ // => 128
+  __FILE__ // => "foo.c"
+  __DATE__ // => "Oct 30 2009"
+  __TIME__ // => "10:01:29"
