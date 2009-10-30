@@ -1,0 +1,12 @@
+
+  # Character Class Testing <ctype.h>
+  
+  isalpha(c)    non-zero if c is alpha
+  isupper(c)    "           " is uppercase
+  islower(c)    "           " is lowercase
+  isdigit(c)    "           " is a digit
+  isalnum(c)    "           " is isalpha(c) or isdigit(c)
+  isspace(c)    "           " is blank, tab, newline, return, formfeed, or vertical tab
+  tolower(c)    return c converted to lower case
+  toupper(c)    return c converted to upper case
+  
