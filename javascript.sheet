@@ -10,3 +10,16 @@
   new Function('a, b', 'print(a, b)')
   (function(){})()
   (function($){})(jQuery)
+  
+  ## Function.prototype.toString()
+  
+  (function foo(){}).toString()
+  // => "function foo() { }"
+  
+  ## Function.prototype.length
+  
+  (function foo(){}).length
+  // => 0
+  
+  (function foo(foo, bar){}).length
+  // => 2
