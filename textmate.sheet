@@ -3,14 +3,14 @@
   
   ## Navigation
   
-  Command-Control-T	Find Command
-  Command-T		Find file in project by name (type name or acronym for file)
-  Command-Shift-T		Go to Symbol
-  Command-1 / 2 / etc 	Switch to that number tab in Text
-  Command-F2		Toggle Bookmark
-  F2			Cycle Bookmarks
-  F1			Toggle Fold
-  Ctrl-Shift-T            Show TODO List
+  Command-Control-T     Find Command
+  Command-T             Find file in project by name (type name or acronym for file)
+  Command-Shift-T       Go to Symbol
+  Command-1 / 2 / etc   Switch to that number tab in Text
+  Command-F2            Toggle Bookmark
+  F2                    Cycle Bookmarks
+  F1                    Toggle Fold
+  Ctrl-Shift-T          Show TODO List
   
   ## Selection
   
