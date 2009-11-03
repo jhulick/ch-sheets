@@ -1,0 +1,12 @@
+
+  # JavaScript
+  
+  ## Functions
+  
+  function foo(){}
+  foo = function(){}
+  foo = function foo(){}
+  Function('a, b', 'print(a, b)')
+  new Function('a, b', 'print(a, b)')
+  (function(){})()
+  (function($){})(jQuery)
