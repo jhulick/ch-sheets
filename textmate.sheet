@@ -14,55 +14,55 @@
   
   ## Selection
   
-  Control-W		Select current word
-  Command-Shift-L		Select current line
-  Command-Shift-B		Select enclosed braces
-  Command-Control-B	Select current scope
+  Control-W             Select current word
+  Command-Shift-L       Select current line
+  Command-Shift-B       Select enclosed braces
+  Command-Control-B     Select current scope
   
   ## Editing
   
-  Escape			Tab completion of variables / strings
-  Command-Enter		Go to end of line and return
-  Command-Shift-V		Paste previous item in clipboard history
+  Escape                Tab completion of variables / strings
+  Command-Enter         Go to end of line and return
+  Command-Shift-V       Paste previous item in clipboard history
   Command-Control-Alt-V	Select from Clipboard
-  Command-Alt-A	        Edit Multiple Lines
-  Control-U		Upcase
-  Control-Shift-U		Downcase
-  Control-Alt-U		TitleCase
-  Control-Alt-Q		Unwrap line, remove newlines
-  Control-K		Kill all text to end of line
-  Control-Y		Yank back all text from kill
-  Control-D		Delete character (not backspace)
+  Command-Alt-A         Edit Multiple Lines
+  Control-U             Upcase
+  Control-Shift-U       Downcase
+  Control-Alt-U         TitleCase
+  Control-Alt-Q         Unwrap line, remove newlines
+  Control-K             Kill all text to end of line
+  Control-Y             Yank back all text from kill
+  Control-D             Delete character (not backspace)
   
   ## Search & Replace
   
-  Control-S		Live Search / Find Next
-  Control-Shift-S		Find Previous
-  Command-F		Find
-  Command-Shift-F		Find in Project
+  Control-S             Live Search / Find Next
+  Control-Shift-S       Find Previous
+  Command-F             Find
+  Command-Shift-F       Find in Project
   
-  ## Commenting, Quoting, & Indenting
+  ## Commenting, Quoting, and Indenting
   
-  Command-/		Comment Toggle
-  Control-"		Single/Double Quotes Toggle
-  Command-]		Indent Selection
-  Command-[		Un-indent Selection
-  Command-Alt-[		Reindent
+  Command-/             Comment Toggle
+  Control-"             Single/Double Quotes Toggle
+  Command-]             Indent Selection
+  Command-[             Un-indent Selection
+  Command-Alt-[         Reindent
   
   ## Ctags
   
-  Control-]		Lookup Definition
-  Command-Control-B	Source Browser
+  Control-]             Lookup Definition
+  Command-Control-B	    Source Browser
   
   ## Web
   
-  Command-Control-Alt-P	Web Preview
-  Command-Control-Shift-W Update missing tags for all lines
-  Control-Shift-<		Create tags	(HTML)
-  Control-Enter		<br/>
-  Control-Shift-L		Wrap selection as Link
-  doctype-Tab		Document Type Section
+  Command-Control-Alt-P	    Web Preview
+  Command-Control-Shift-W   Update missing tags for all lines
+  Control-Shift-<		        Create tags	(HTML)
+  Control-Enter		          <br/>
+  Control-Shift-L		        Wrap selection as Link
+  doctype-Tab		            Document Type Section
   head-Tab
   body-Tab
   table-Tab
-  Command-&		Menu for URL
+  Command-&		              Menu for URL
