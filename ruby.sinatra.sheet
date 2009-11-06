@@ -1,0 +1,124 @@
+
+  # Sinatra
+  
+  ## Routes
+  
+  Enable :methodoverride to utilize RESTful routes
+  via the :_method param.
+  
+  get '/users/?' do
+  
+  end
+  
+  get '/user/:id' do |id|
+    # params[:id]
+  end
+  
+  get '/user/*' do |id|
+    
+  end
+  
+  get '/user/*/*' do |id, operation|
+    p params[:splat]
+    # => ['1', 'edit']
+  end
+  
+  get %r{/hello/([\w]+)} do
+    "Hello, #{params[:captures].first}!"
+  end
+  
+  get '/foo', :agent => /Songbird (\d\.\d)[\d\/]*?/ do
+    "You're using Songbird version #{params[:agent][0]}"
+  end
+  
+  get '/foo' do
+    # Matches non-songbird browsers
+  end
+  
+  ## Options
+  
+  #set, #enable, #disable
+  
+  set :foo, 'bar'
+  
+  get '/foo' do
+    options.foo
+    # => 'bar'
+  end
+  
+  ### :environment
+  
+  A symbol representing the deployment environment. Defaults to RACK_ENV
+  or :development. Typically is one of :test, :production, or :development.
+  
+  ### :sessions
+  
+  Support for encrypted cookie-based sessions are included with Sinatra but
+  are disabled by default.
+  
+  ### :methodoverride
+  
+  Support RESTful routes by faking the HTTP method using POST param :_method.
+  
+  ### :root
+  
+  Application root directory.
+  
+  ### :static
+  
+  Boolean determining whether or not static files should be served from
+  the applications :public directory.
+  
+  ### :public
+  
+  Static public files directory.
+  
+  ### :views
+  
+  View template directory.
+  
+  ### :run
+  
+  Whether or not the built-in web server is started when the
+  application is fully loaded. By default this is true only when
+  $0 == :app_file, i.e when running the application file directly.
+  
+  ### :server
+  
+  String or array of rack server handler names. Defaults to %w( thin mongrel webrick )
+  
+  ### :host
+  
+  Hostname or ipaddress. Defaults to 0.0.0.0
+  
+  ### :port
+  
+  Server port number, defaults to 4567.
+  
+  ### :dump_errors
+  
+  Boolean specifying whether backtraces are written to STDERR when
+  an exception is raised from a route or filter.
+  
+  ### :clean_trace
+  
+  Whether or not Sinatra should clean the backtrace, removing library
+  / framework entries.
+  
+  ### :raise_errors
+  
+  Boolean specifying whether exceptions raised from routes and filters 
+  should escape the application. When disabled, exceptions are rescued 
+  and mapped to error handlers which typically set a 5xx status code and 
+  render a custom error page. 
+  
+  Enabling the :raise_errors option causes exceptions to be raised 
+  outside of the application where it may be handled by the server handler or
+  Rack middleware, such as Rack::ShowExceptions or Rack::MailExceptions.
+  
+  ### :lock
+
+  Ensure only a single request at a time using a mutex lock.
+  
+  
+  
