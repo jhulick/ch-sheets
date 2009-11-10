@@ -7,3 +7,6 @@
   
   # A Postgres connection:
   DataMapper.setup(:default, 'postgres://localhost/the_database_name')
+
+  # Logger Example
+  DataObjects::Sqlite3.logger = DataObjects::Logger.new $stdout, 0
