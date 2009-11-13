@@ -1,0 +1,28 @@
+
+  # CSS Transition Properties
+
+  ## transition-property none | all | <id> [, <id>]*
+  
+  specifies the name(s) of css properties to apply the transition to.
+  transition-property: opacity, left;
+  
+  ## transition-duration <time> [, <time>]*
+  
+  defines the length of time that a transition takes place
+  transition-duration: 2s;
+  transition-duration: 2s, 4s;
+  
+  ## transition-timing-function ease | linear | ease-in | ease-out | ease-in-out 
+  
+  describes the easing function to use for transitions
+  
+  transitions-timing-function ease-in;
+  transitions-timing-function ease-in, ease-out;
+  
+  ## transition-delay <time> [, <time>]*
+  
+  defines when the transition will start. 0 will start as soon as
+  the property has been changed.
+  
+  transition-delay: 2s;
+  transition-delay: 2s, 4s;
