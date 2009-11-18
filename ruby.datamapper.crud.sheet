@@ -56,5 +56,6 @@
   :foo.gte  >=
   :foo.eql  ==
   :foo.like
+  :foo.not
   :foo.regexp
   
