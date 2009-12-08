@@ -14,7 +14,7 @@
   # Implicit validates_format
   :format => ...
   
-  validates_unique  :email
+  validates_is_unique  :email
   validates_present :name,  :email
   validates_length  :name,  :min => 5, :max => 32
   validates_format  :email, :format => :email_address, :message => 'Your email sucks!'
