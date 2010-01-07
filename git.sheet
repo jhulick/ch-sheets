@@ -153,6 +153,12 @@
   
   git push <repository> :heads/<branch>
     removes a branch from a remote repository. Example: git push origin :refs/old_branch_to_be_deleted
+    
+  git branch -a
+    view remote branches
+    
+  git checkout -b experimental origin/experimental
+    check out a remote branch
   
   Merging
   -------

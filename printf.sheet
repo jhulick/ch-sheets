@@ -1,0 +1,43 @@
+
+  # Printf
+  
+  ## Syntax
+  
+    %[flags][width][.precision][length]specifier
+  
+  ## Specifiers
+  
+  c	  Character	(a)
+  d   or i	Signed decimal integer	(392)
+  e	  Scientific notation (mantise/exponent) using e character	(3.9265e+2)
+  E	  Scientific notation (mantise/exponent) using E character	(3.9265E+2)
+  f	  Decimal floating point	(392.65)
+  g	  Use the shorter of %e or %f	(392.65)
+  G	  Use the shorter of %E or %f	(392.65)
+  o	  Signed octal	(610)
+  s	  String of characters	(sample)
+  u	  Unsigned decimal integer	(7235)
+  x	  Unsigned hexadecimal integer	(7fa)
+  X	  Unsigned hexadecimal integer (capital letters)	(7FA)
+  p	  Pointer address	(B800:0000)
+  n	  Nothing printed. The argument must be a pointer to a signed int, where the number of characters written so far is stored.	
+  %	  A % followed by another % character will write % to stdout.
+  
+  ## Flags
+  
+  -	
+  Left-justify within the given field width; Right justification is the default (see width sub-specifier).
+  
+  +
+  Forces to precede the result with a plus or minus sign (+ or -) even for positive numbers. By default, only negative numbers are preceded with a - sign.
+
+  (space) 
+  If no sign is going to be written, a blank space is inserted before the value.
+
+  #
+  Used with o, x or X specifiers the value is preceeded with 0, 0x or 0X respectively for values different than zero.
+  Used with e, E and f, it forces the written output to contain a decimal point even if no digits would follow. By default, if no digits follow, no decimal point is written.
+  Used with g or G the result is the same as with e or E but trailing zeros are not removed.
+
+  0
+  Left-pads the number with zeroes (0) instead of spaces, where padding is specified (see width sub-specifier).
