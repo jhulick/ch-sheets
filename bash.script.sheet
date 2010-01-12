@@ -100,3 +100,22 @@
         5) exit
     esac
   
+  ## Substitution
+  
+  # Add /opt/bin to $PATH for duration of the script
+  PATH=${PATH}:/opt/bin
+  
+  # Default username to whoami output
+  echo ${username-`whoami`}
+  
+  # Default even when set, but null
+  echo ${username:-`whoami`}
+  
+  # Output closest match smile.png
+  NAME=path/to/icon.smile.png
+  echo "${NAME#*.}"
+  
+  $ Ouput furthest match png
+  NAME=path/to/icon.smile.png
+  echo "${NAME##*.}"
+  
