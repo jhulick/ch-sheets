@@ -66,3 +66,20 @@
   for i in `seq -f "%03g" 1 100`; do wget http://www.example.com/bob$i.jpg; done
   
   Change the seq formatting options for more or less padding.
+  
+  ## Select Menus
+  
+    PS3='Choose one word: ' 
+    select word in "linux" "bash" "scripting" "tutorial" 
+    do
+      echo "The word you have selected is: $word"
+      break  
+    done
+  
+    1) linux
+    2) bash
+    3) scripting
+    4) tutorial
+    Choose one word: 3
+    The word you have selected is: scripting
+  
