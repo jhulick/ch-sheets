@@ -111,11 +111,20 @@
   # Default even when set, but null
   echo ${username:-`whoami`}
   
-  # Output closest match smile.png
+  # Output closest match 'smile.png'
   NAME=path/to/icon.smile.png
   echo "${NAME#*.}"
   
-  $ Ouput furthest match png
+  # Ouput furthest match 'png'
   NAME=path/to/icon.smile.png
   echo "${NAME##*.}"
+  
+  # Remove the furthest match 'path/to/icon'
+  NAME=path/to/icon.smile.png
+  echo "${NAME%%.*}"
+  
+  # Remove the closest match 'path/to/icon.smile'
+  NAME=path/to/icon.smile.png
+  echo "${NAME%.*}"
+  
   
