@@ -127,4 +127,26 @@
   NAME=path/to/icon.smile.png
   echo "${NAME%.*}"
   
+  # Echo '/to/icon.smile.png' using the given index
+  NAME=path/to/icon.smile.png
+  echo "${NAME:4}"
   
+  # Echo 'to' using the given index / length
+  NAME=path/to/icon.smile.png
+  echo "${NAME:5:2}"
+  
+  # Replace first 'foo' with 'bar'
+  NAME="foo foobar foo"
+  echo "${NAME/foo/bar}"
+  
+  # Replace all 'foo' with 'bar'
+  NAME="foo foobar foo"
+  echo "${NAME//foo/bar}"
+  
+  # Replace prefix 'foo' with 'bar'
+  NAME="foo foobar foo"
+  echo "${NAME/#foo/bar}"
+  
+  # Replace suffix 'foo' with 'bar'
+  NAME="foo foobar foo"
+  echo "${NAME/%foo/bar}"
