@@ -1,0 +1,48 @@
+
+  # iptables
+  
+  ## Saving
+  
+    $ iptables-save > /etc/iptables.rules
+    $ iptables-save -c > /etc/iptables.save
+  
+  ## Restoring
+  
+    $ iptables-restore < /etc/iptables.rules
+  
+  ## Applying Rules
+  
+    edit '/etc/network/interfaces' and append
+    "pre-up iptables-restore < /etc/iptables.rules"
+    to your interface (eth0).
+    
+    also you may have down rules:
+    "post-down iptables-restore < /etc/iptables.downrules"
+    
+    etc:
+      auto eth0
+      iface eth0 inet dhcp
+        pre-up iptables-restore < /etc/iptables.rules
+        post-down iptables-restore < /etc/iptables.downrules
+        
+  ## Example
+  
+    *filter
+    :INPUT ACCEPT [273:55355]
+    :FORWARD ACCEPT [0:0]
+    :LOGNDROP - [0:0]
+    :OUTPUT ACCEPT [92376:20668252]
+    -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+    -A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+    -A INPUT -i eth0 -p tcp -m tcp --dport 80 -j ACCEPT
+    -A INPUT -i lo -j ACCEPT
+    -A INPUT -j LOGNDROP
+    -A LOGNDROP -p tcp -m limit --limit 5/min -j LOG --log-prefix "Denied TCP: " --log-level 7
+    -A LOGNDROP -p udp -m limit --limit 5/min -j LOG --log-prefix "Denied UDP: " --log-level 7
+    -A LOGNDROP -p icmp -m limit --limit 5/min -j LOG --log-prefix "Denied ICMP: " --log-level 7
+    -A LOGNDROP -j DROP
+    COMMIT
+    
+  ## 
+  
+  
