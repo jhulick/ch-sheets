@@ -52,10 +52,10 @@
   
   # Fixture Resolution
   
-  - PATH
-  - spec/PATH
-  - spec/fixtures/PATH
-  - spec/fixtures/PATH.html
+  Set the "fixturePath" option.
+  
+  - <fixturePath>/PATH
+  - <fixturePath>/PATH.html
   
   # Mock XMLHttpRequest
   
