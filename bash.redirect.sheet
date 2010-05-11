@@ -26,3 +26,5 @@
   # Redirect an error
   $ echo An Error >&2 2>&1 | sed -e 's/A/I/'
 
+  # Redirect both stdout and stderr
+  $ foo &> foo.log
